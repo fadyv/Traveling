@@ -292,6 +292,19 @@ function getCurrentDate() {
 
 $(document).ready(function(){
 
+    $('.open-search').click((event) => {
+      // event.stopPropagation();
+      $('.open-search').css('display', 'none');
+      $('.close-search').css('display', 'block');
+      $('.search-div').fadeIn();
+    });
+    
+    $('.close-search').click((event) => {
+      // event.stopPropagation();
+      $('.close-search').css('display', 'none');
+      $('.open-search').css('display', 'block');
+      $('.search-div').fadeOut();
+    });
 
 
   AOS.init();
@@ -324,17 +337,4 @@ $(document).ready(function(){
  
 });
 
-$('.open-search').click((event) => {
-      // event.stopPropagation();
-      $('.open-search').css('display', 'none');
-      $('.close-search').css('display', 'block');
-      $('.search-div').fadeIn();
-    });
-    
-    $('.close-search').click((event) => {
-      // event.stopPropagation();
-      $('.close-search').css('display', 'none');
-      $('.open-search').css('display', 'block');
-      $('.search-div').fadeOut();
-    });
 
