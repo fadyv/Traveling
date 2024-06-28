@@ -318,7 +318,13 @@ $(document).ready(function(){
 
     
 
-    $('.open-search').click((event) => {
+    
+    
+    
+ 
+});
+
+$('.open-search').click((event) => {
       // event.stopPropagation();
       $('.open-search').css('display', 'none');
       $('.close-search').css('display', 'block');
@@ -331,16 +337,4 @@ $(document).ready(function(){
       $('.open-search').css('display', 'block');
       $('.search-div').fadeOut();
     });
-    
-    // $('.search-div').click((event) => {
-    //   event.stopPropagation();
-    // });
-    
-    // $('body').click(() => {
-    //   $('.close-search').css('display', 'none');
-    //   $('.open-search').css('display', 'block');
-    //   $('.search-div').fadeOut();
-    // });
- 
-});
 
